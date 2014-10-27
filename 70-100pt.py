@@ -23,11 +23,20 @@ drawpad = Canvas(root, width=800,height=600, background='white')
 drawpad.grid(row=0, column=1)
 
 # Insert your code here to draw the house!
-rectangle = drawpad.create_rectangle(310,450,410,600)
-line1 = drawpad.create_line(310,450,360,400)
-line2 = drawpad.create_line(410,450,360,400)
+rectangle = drawpad.create_rectangle(310,450,410,600,  fill= "red")
+line1 = drawpad.create_line(310,450,360,400, fill= "red")
+line2 = drawpad.create_line(410,450,360,400, fill= "red")
 # Windows and a door!
-rectangle = drawpad.create_rectangle(340,490,320,470)
-rectangle = drawpad.create_rectangle(380,470,400,490)
-root.mainloop()
+rectangle = drawpad.create_rectangle(340,490,320,470, fill= 'white')
+rectangle = drawpad.create_rectangle(380,470,400,490, fill= 'white')
+rectangle = drawpad.create_rectangle(350,570,370,600, fill= 'white')
+rectangle = drawpad.create_rectangle(340,500,320,520, fill= 'white')
+rectangle = drawpad.create_rectangle(380,500,400,520, fill= 'white')
+#Chimeny and A door knoob
+line1 = drawpad.create_line(400,400,400,440, fill= 'green')
+line2 = drawpad.create_line(410,400,410,450, fill= 'green')
+line3 = drawpad.create_line(400,400,410,400, fill= 'green')
+line3 = drawpad.create_line(360,590,360,580, fill= 'green')
 
+
+root.mainloop()
